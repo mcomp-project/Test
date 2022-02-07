@@ -13,10 +13,7 @@ pipeline{
     stages {
         stage("First step") {
             steps{
-                echo "========Building image started========"
-                    {
                     sh 'docker run hello-world'
-                    }
             }
 
         }
