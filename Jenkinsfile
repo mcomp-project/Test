@@ -1,7 +1,6 @@
 #!groovy
 
-//myfirstpipeline
-//fusk i don`t know what am I doing
+//homework2
 
 properties([disableConcurrentBuilds()])
 
@@ -14,7 +13,10 @@ pipeline{
     stages {
         stage("First step") {
             steps{
-                sh 'echo "Hello World!"'
+                echo "========Building image started========"
+                    {
+                    sh 'docker run hello-world'
+                    }
             }
 
         }
